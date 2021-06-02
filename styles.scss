@@ -20,7 +20,7 @@ html {
 
 body {
   font-size: calc(0.75vh + 0.75vw);
-  font-family: "Open Sans";
+  font-family: "Quicksand", sans-serif;
   display: flex;
   margin: 0;
   background: var(--bg-color);
@@ -29,6 +29,7 @@ body {
   flex-direction: column;
   justify-content: center;
   overflow-y: auto;
+  scroll-behavior: smooth;
 }
 
 body::-webkit-scrollbar {
@@ -41,7 +42,6 @@ body::-webkit-scrollbar-track {
 
 body::-webkit-scrollbar-thumb {
   background-color: var(--primary-color);
-  /* outline: 1px solid slategrey; */
   border-radius: 2rem;
 }
 
@@ -57,11 +57,10 @@ div {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* border: 1px solid black; */
 }
 
 .fa-code {
-  color: #7546ba;
+  color: var(--primary-color);
 }
 
 .web {
@@ -70,7 +69,6 @@ div {
 
 .sun,
 .moon {
-  /* height: 16px;  */
   width: 16px;
   padding: 4px 6px;
 }
@@ -118,9 +116,7 @@ input:checked + .toggle-thumb:before {
 }
 
 .intro-grid {
-  /* border: 1px solid black; */
   width: 96%;
-  height: 84.5%;
   display: flex;
   box-sizing: border-box;
   padding: 1rem;
@@ -130,32 +126,28 @@ input:checked + .toggle-thumb:before {
 }
 
 .intro-text {
-  /* border: 1px solid black; */
   width: 40%;
   display: flex;
-  //   color: #fff;
   box-sizing: border-box;
   justify-content: center;
   align-items: center;
   padding: 0.4rem;
   font-size: 1.5rem;
+  font-weight: 500;
 }
 
 .graphics {
   display: flex;
-  /* border: 1px solid black; */
 }
 
 .developer {
   height: 100%;
   width: 30rem;
-  /* border: 1px solid black; */
 }
 
 .logos {
   display: flex;
   flex-direction: column;
-  /* border: 1px solid black; */
   justify-content: center;
 }
 
@@ -163,9 +155,8 @@ input:checked + .toggle-thumb:before {
 .express,
 .node,
 .mongodb {
-  /* height: 14vh; */
+  height: 6rem;
   width: 14vw;
-  //   border: 1px solid black;
 }
 
 .node {
@@ -173,19 +164,78 @@ input:checked + .toggle-thumb:before {
 }
 
 .about-me {
-  /* border: 1px solid black; */
   width: 96%;
-  height: 84.5%;
   display: flex;
   box-sizing: border-box;
-  padding: 1rem;
+  padding: 1.5rem;
   margin-top: 2%;
   margin-bottom: 2%;
+  flex-direction: column;
   background: var(--secondary-color);
   border-radius: 0.7rem;
-  font-size: 4rem;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.section-head {
+  height: 2rem;
+  width: 6.5rem;
+  display: grid;
+  color: #fff;
+  place-items: center;
+  font-weight: bold;
+  border-radius: 1rem;
+  background: var(--primary-color);
+  opacity: 0.9;
+}
+
+.section-head:hover {
+  transform: scale(1.013);
+  box-shadow: 0 0 2px 3px #7546ba;
+}
+
+.section-content {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 1rem;
+}
+
+.intro {
+  display: flex;
+  box-sizing: border-box;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
+  padding: 0.4rem;
+}
+
+.profile-pic {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  box-shadow: 0 0 2px 3px #7546ba;
+}
+
+.profile-pic:hover {
+  transform: scale(1.013);
+  box-shadow: 0 0 6px 7px #7546ba;
+}
+
+.detailed-info {
+  width: 40%;
+  color: var(--font-color);
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.timeline-wrapper {
+  box-sizing: border-box;
+  padding: 2rem 0 0;
+}
+
+.timeline-head {
+  font-family: "Sacramento", cursive;
+  color: var(--primary-color);
+  font-size: 3rem;
 }
 
 @media (max-width: 970px) {
@@ -193,17 +243,18 @@ input:checked + .toggle-thumb:before {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    /* border: 1px solid black; */
   }
   .intro-text {
-    /* border: 1px solid black; */
     width: 70%;
     font-size: 3rem;
   }
   .developer {
     width: 45vw;
+    height: 30rem;
   }
   .graphics {
+    width: 100%;
+    justify-content: space-around;
     align-items: center;
   }
   .logos {
@@ -214,8 +265,25 @@ input:checked + .toggle-thumb:before {
   .express,
   .node,
   .mongodb {
-    /* height: 28vh; */
+    height: 7rem;
     width: 32vw;
+  }
+
+  .intro {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .profile-pic {
+    width: 130px;
+    height: 130px;
+  }
+
+  .detailed-info {
+    width: 100%;
+    line-height: 2.5rem;
+    margin-top: 4rem;
+    font-size: 1.4rem;
   }
 }
 
@@ -224,12 +292,14 @@ input:checked + .toggle-thumb:before {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    /* border: 1px solid black; */
   }
   .developer {
     width: 45vw;
+    height: 30rem;
   }
   .graphics {
+    width: 100%;
+    justify-content: space-around;
     align-items: center;
   }
   .logos {
@@ -240,7 +310,7 @@ input:checked + .toggle-thumb:before {
   .express,
   .node,
   .mongodb {
-    /* height: 24vh; */
+    height: 6rem;
     width: 24vw;
   }
 }
@@ -250,17 +320,18 @@ input:checked + .toggle-thumb:before {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    /* border: 1px solid black; */
   }
   .intro-text {
-    /* border: 1px solid black; */
     width: 70%;
     font-size: 3rem;
   }
   .developer {
     width: 45vw;
+    height: 30rem;
   }
   .graphics {
+    width: 100%;
+    justify-content: space-around;
     align-items: center;
   }
   .logos {
@@ -271,7 +342,7 @@ input:checked + .toggle-thumb:before {
   .express,
   .node,
   .mongodb {
-    /* height: 24vh; */
+    height: 6rem;
     width: 24vw;
   }
 }
@@ -281,27 +352,27 @@ input:checked + .toggle-thumb:before {
   .express,
   .node,
   .mongodb {
-    /* height: 13vh; */
-    width: 24vw;
+    height: 7.8rem;
+    width: 19vw;
+  }
+
+  .intro-text {
+    padding: 2% 0;
   }
 }
-
-/* @media (min-width: 970px) and (max-width: 1200px){
-      .react,
-      .express,
-      .node,
-      .mongodb {
-          height: 10vh;
-          width: 17vw;
-      }
-  } */
 
 @media (min-width: 1200px) and (max-width: 1500px) {
   .react,
   .express,
   .node,
   .mongodb {
-    /* height: 13vh; */
+    height: 6rem;
     width: 15vw;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 3840px) {
+  .detailed-info {
+    line-height: 2rem;
   }
 }
