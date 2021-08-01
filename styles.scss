@@ -352,6 +352,7 @@ input:checked + .toggle-thumb:before {
     cursor: pointer;
     text-decoration: none;
     color: var(--font-color);
+    font-weight: bold;
 }
 
 .lower-section {
@@ -366,6 +367,7 @@ input:checked + .toggle-thumb:before {
     cursor: pointer;
     text-decoration: none;
     color: var(--font-color);
+    font-weight: bold;
 }
 
 .copyright {
