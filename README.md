@@ -1,7 +1,7 @@
 ### Hi there 👋
 
 - 🔭 I’m currently working on React and Express.
-- 🌱 I’m currently learning Ruby on Rails.
+- 🌱 I’m currently learning socket.
 - 👯 I’m looking to collaborate on Web Development.
 - 💬 Ask me about React.
 
