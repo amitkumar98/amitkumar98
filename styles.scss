@@ -312,6 +312,69 @@ input:checked + .toggle-thumb:before {
   font-size: 3rem;
 }
 
+.projects {
+    width: 96%;
+    display: flex;
+    box-sizing: border-box;
+    padding: 1.5rem;
+    margin: 2% 0;
+    flex-direction: column;
+    background: var(--secondary-color);
+    border-radius: 0.7rem;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+.footer {
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+    padding: 1.5rem;
+    margin-top: 2%;
+    flex-direction: column;
+    background: var(--secondary-color);
+    align-items: flex-start;
+    row-gap: 1rem;
+    position: relative;
+    justify-content: space-between;
+  }
+
+.upper-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 6rem;
+}
+
+.social-link {
+    margin-left: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--font-color);
+}
+
+.lower-section {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 0.5rem;
+}
+
+.other-links {
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--font-color);
+}
+
+.copyright {
+    font-size: 0.8rem;
+    position: absolute;
+    bottom: 5;
+    right: 10;
+}
+
 @media (max-width: 970px) {
   .intro-grid {
     flex-direction: column;
