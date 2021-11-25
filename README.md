@@ -1,9 +1,10 @@
 ### Hi there 👋
 
-- 🔭 I’m currently working on React and Express.
-- 🌱 I’m currently learning socket.
+- 🔭 I’m currently working with NextJs.
+- 🌱 I’m currently learning Kafka.
 - 👯 I’m looking to collaborate on Web Development.
-- 💬 Ask me about React.
+- 💬 Ask me anything about React.
+- ⚡ How to reach me: Twitter @AmitKumar761
 
 <!--
 **amitkumar98/amitkumar98** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
