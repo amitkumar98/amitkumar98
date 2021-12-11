@@ -25,7 +25,7 @@ html {
   top: 0;
   left: 0;
   background-color: var(--bg-color);
-  display: none;
+  display: grid;
   place-items: center;
 }
 
@@ -101,7 +101,7 @@ body {
 }
 
 #page {
-  display: flex;
+  display: none;
   flex-direction: column;
   place-items: center;
 }
@@ -319,7 +319,6 @@ input:checked + .toggle-thumb:before {
 .social-logo {
   height: 2rem;
   width: 2rem;
-  // margin-right: 1rem;
 }
 
 .social-link {

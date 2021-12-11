@@ -25,7 +25,8 @@ html {
   top: 0;
   left: 0;
   background-color: var(--bg-color);
-  display: none;
+  display: -ms-grid;
+  display: grid;
   place-items: center;
 }
 
@@ -141,9 +142,7 @@ body {
 }
 
 #page {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
