@@ -14,6 +14,7 @@
     <link rel="icon" href="assets/portfolio.ico" />
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <link rel="stylesheet" type="text/css" href="timelineStyles.css" />
+    <link rel="stylesheet" type="text/css" href="projectStyles.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap"
       rel="stylesheet"
@@ -22,7 +23,7 @@
       href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap"
       rel="stylesheet"
     />
-    <title>Amit</title>
+    <title>Amit | JavaScript Full-Stack Developer</title>
   </head>
   <body>
     <div id="page">
@@ -45,13 +46,7 @@
           Welcome to my Portfolio.
         </div>
         <div class="graphics">
-          <img class="developer" src="./assets/developer.svg" alt="developer" />
-          <div class="logos">
-            <img class="react" src="./assets/reactjs.svg" alt="react" />
-            <img class="express" src="./assets/expressjs.svg" alt="express" />
-            <img class="node" src="./assets/node-js.svg" alt="node" />
-            <img class="mongodb" src="./assets/mongodb.svg" alt="mongodb" />
-          </div>
+          <img class="developer" src="./assets/developer-animate.svg" alt="developer" />
         </div>
       </section>
       <section class="about-me" id="about-me">
@@ -84,6 +79,12 @@
                 <li>
                   <div class="content">
                     <h3>HighRadius - Associate Software Engineer - I</h3>
+                    <p class="timeline-content">
+                      •&nbsp;&nbsp;Working as a part of Treasury dev team mainly 
+                      with reactjs and spring-boot.<br /><br />
+                      •&nbsp;&nbsp;Responsible for development and maintainance of 
+                      tms-ui application as well as backend services.<br /><br />
+                    </p>
                   </div>
                   <div class="time">
                     <h4>June 2021 - Present</h4>
@@ -95,7 +96,7 @@
                     <h3>HighRadius - Developer Intern</h3>
                     <p>
                       &nbsp;•&nbsp;&nbsp;Responsible for development and
-                      maintainance of Autonomous application.<br /><br />
+                      maintainance of Autonomous application, along with the team.<br /><br />
                       &nbsp;•&nbsp;&nbsp;Worked on building react components for
                       using across the application.<br /><br />
                       &nbsp;•&nbsp;&nbsp;Implemented the ability to select and
@@ -141,34 +142,88 @@
           </div>
         </div>
       </section>
-      <!-- <section class="projects">
+      <section class="projects" id="projects">
         <div class="section-head">Projects</div>
-
-      </section> -->
+        <div class="section-body">
+          <div class="project-card">
+            <div class="project-image">
+              <a
+              href="https:fiber-chat.netlify.app"
+              target="_blank"
+              rel="noopener noreferrer"
+            ><img class="project-logo-1" src="./assets/fiber-chat.png" alt="fiber-chat" /></a>
+            </div>
+            <div class="project-info">
+              <a
+                  class="project-title"
+                  href="https:fiber-chat.netlify.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                ><h3>Fiber Chat</h3></a>
+              <p>
+                Fiber Chat is a real-time chat app/social network. You can find friends here and chat with them.
+              </p>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-image">
+              <a
+                  href="https://amitkumar98.github.io/your-to-do/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                ><img class="project-logo-2" src="./assets/your_to-Do_logo.png" alt="your-to-do" />
+              </a>
+            </div>
+            <div class="project-info">
+              <a
+                  class="project-title"
+                  href="https://amitkumar98.github.io/your-to-do/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                ><h3>Your to-do</h3></a>
+              <p>
+                Your to-do is a simple to-do app. You can add tasks and mark them as done. You can also edit/delete the tasks.
+              </p>
+              <div class="project-links">
+                <a
+                  class="project-link"
+                  href="https://github.com/amitkumar98/your-to-do"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >Github link</a>
+            </div>
+          </div>
+        </div>
+      </section>
       <footer class="footer">
         <div class="upper-section">
           <a
             class="social-link"
             href="https://github.com/amitkumar98"
             target="_blank"
-            >Github</a
+            >
+            <img class="social-logo" src="./assets/github.png" alt="linkedin" />
+          </a
           >
           <a
             class="social-link"
             href="https://www.linkedin.com/in/amit-kumar-90280b173/"
             target="_blank"
-            >LinkedIn</a
-          >
+            >
+            <img class="social-logo" src="./assets/linkedin.png" alt="linkedin" />
+          </a>
           <a
             class="social-link"
             href="https://twitter.com/AmitKumar761"
             target="_blank"
-            >Twitter</a
+            >
+            <img class="social-logo" src="./assets/twitter.png" alt="linkedin" />
+            </a
           >
         </div>
         <div class="lower-section">
           <a class="other-links" href="#about-me">About me</a>
-          <a class="other-links">Projects</a>
+          <a class="other-links" href="#projects">Projects</a>
           <a class="other-links">Resume</a>
         </div>
         <span class="copyright">&copy; Amit Kumar. 2021</span>

@@ -25,7 +25,7 @@ html {
   top: 0;
   left: 0;
   background-color: var(--bg-color);
-  display: grid;
+  display: none;
   place-items: center;
 }
 
@@ -101,7 +101,7 @@ body {
 }
 
 #page {
-  display: none;
+  display: flex;
   flex-direction: column;
   place-items: center;
 }
@@ -219,24 +219,6 @@ input:checked + .toggle-thumb:before {
   width: 30rem;
 }
 
-.logos {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.react,
-.express,
-.node,
-.mongodb {
-  height: 6rem;
-  width: 14vw;
-}
-
-.node {
-  margin-bottom: 4vh;
-}
-
 .about-me {
   width: 96%;
   display: flex;
@@ -312,69 +294,62 @@ input:checked + .toggle-thumb:before {
   font-size: 3rem;
 }
 
-.projects {
-    width: 96%;
-    display: flex;
-    box-sizing: border-box;
-    padding: 1.5rem;
-    margin: 2% 0;
-    flex-direction: column;
-    background: var(--secondary-color);
-    border-radius: 0.7rem;
-    align-items: flex-start;
-    justify-content: space-between;
-  }
-
 .footer {
-    width: 100%;
-    display: flex;
-    box-sizing: border-box;
-    padding: 1.5rem;
-    margin-top: 2%;
-    flex-direction: column;
-    background: var(--secondary-color);
-    align-items: flex-start;
-    row-gap: 1rem;
-    position: relative;
-    justify-content: space-between;
-  }
+  width: 100%;
+  display: flex;
+  box-sizing: border-box;
+  padding: 1.5rem;
+  margin-top: 2%;
+  flex-direction: column;
+  background: var(--secondary-color);
+  align-items: flex-start;
+  row-gap: 1rem;
+  position: relative;
+  justify-content: space-between;
+}
 
 .upper-section {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    column-gap: 6rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 6rem;
+}
+
+.social-logo {
+  height: 2rem;
+  width: 2rem;
+  // margin-right: 1rem;
 }
 
 .social-link {
-    margin-left: 1rem;
-    cursor: pointer;
-    text-decoration: none;
-    color: var(--font-color);
-    font-weight: bold;
+  margin-left: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--font-color);
+  font-weight: bold;
 }
 
 .lower-section {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding-bottom: 0.5rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 0.5rem;
 }
 
 .other-links {
-    cursor: pointer;
-    text-decoration: none;
-    color: var(--font-color);
-    font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--font-color);
+  font-weight: bold;
 }
 
 .copyright {
-    font-size: 0.8rem;
-    position: absolute;
-    bottom: 5;
-    right: 10;
+  font-size: 0.8rem;
+  position: absolute;
+  bottom: 5;
+  right: 10;
 }
 
 @media (max-width: 970px) {
@@ -395,17 +370,6 @@ input:checked + .toggle-thumb:before {
     width: 100%;
     justify-content: space-around;
     align-items: center;
-  }
-  .logos {
-    height: 40vh;
-    align-items: center;
-  }
-  .react,
-  .express,
-  .node,
-  .mongodb {
-    height: 7rem;
-    width: 32vw;
   }
 
   .intro {
@@ -441,17 +405,6 @@ input:checked + .toggle-thumb:before {
     justify-content: space-around;
     align-items: center;
   }
-  .logos {
-    height: 40vh;
-    align-items: center;
-  }
-  .react,
-  .express,
-  .node,
-  .mongodb {
-    height: 6rem;
-    width: 24vw;
-  }
 }
 
 @media (min-width: 650px) and (max-width: 1025px) and (min-height: 1000px) {
@@ -473,40 +426,11 @@ input:checked + .toggle-thumb:before {
     justify-content: space-around;
     align-items: center;
   }
-  .logos {
-    height: 40vh;
-    align-items: center;
-  }
-  .react,
-  .express,
-  .node,
-  .mongodb {
-    height: 6rem;
-    width: 24vw;
-  }
 }
 
 @media (min-width: 651px) and (max-width: 1200px) {
-  .react,
-  .express,
-  .node,
-  .mongodb {
-    height: 7.8rem;
-    width: 19vw;
-  }
-
   .intro-text {
     padding: 2% 0;
-  }
-}
-
-@media (min-width: 1200px) and (max-width: 1500px) {
-  .react,
-  .express,
-  .node,
-  .mongodb {
-    height: 6rem;
-    width: 15vw;
   }
 }
 

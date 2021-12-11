@@ -68,6 +68,10 @@ h1 {
   padding-bottom: 20px;
 }
 
+.timeline-content {
+  margin-left: 44px !important;
+}
+
 .timeline ul li:nth-child(odd):before {
   content: "";
   position: absolute;
@@ -169,6 +173,9 @@ h1 {
   .timeline:before {
     left: 20px;
     height: 90%;
+  }
+  .timeline-content {
+    margin-left: 0 !important;
   }
   .timeline ul li:nth-child(odd),
   .timeline ul li:nth-child(even) {

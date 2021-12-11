@@ -25,8 +25,7 @@ html {
   top: 0;
   left: 0;
   background-color: var(--bg-color);
-  display: -ms-grid;
-  display: grid;
+  display: none;
   place-items: center;
 }
 
@@ -142,7 +141,9 @@ body {
 }
 
 #page {
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -292,31 +293,6 @@ input:checked + .toggle-thumb:before {
   width: 30rem;
 }
 
-.logos {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.react,
-.express,
-.node,
-.mongodb {
-  height: 6rem;
-  width: 14vw;
-}
-
-.node {
-  margin-bottom: 4vh;
-}
-
 .about-me {
   width: 96%;
   display: -webkit-box;
@@ -416,29 +392,6 @@ input:checked + .toggle-thumb:before {
   font-size: 3rem;
 }
 
-.projects {
-  width: 96%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  padding: 1.5rem;
-  margin: 2% 0;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  background: var(--secondary-color);
-  border-radius: 0.7rem;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
 .footer {
   width: 100%;
   display: -webkit-box;
@@ -476,6 +429,11 @@ input:checked + .toggle-thumb:before {
           align-items: center;
   -webkit-column-gap: 6rem;
           column-gap: 6rem;
+}
+
+.social-logo {
+  height: 2rem;
+  width: 2rem;
 }
 
 .social-link {
@@ -541,19 +499,6 @@ input:checked + .toggle-thumb:before {
         -ms-flex-align: center;
             align-items: center;
   }
-  .logos {
-    height: 40vh;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .react,
-  .express,
-  .node,
-  .mongodb {
-    height: 7rem;
-    width: 32vw;
-  }
   .intro {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -599,19 +544,6 @@ input:checked + .toggle-thumb:before {
         -ms-flex-align: center;
             align-items: center;
   }
-  .logos {
-    height: 40vh;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .react,
-  .express,
-  .node,
-  .mongodb {
-    height: 6rem;
-    width: 24vw;
-  }
 }
 
 @media (min-width: 650px) and (max-width: 1025px) and (min-height: 1000px) {
@@ -642,41 +574,11 @@ input:checked + .toggle-thumb:before {
         -ms-flex-align: center;
             align-items: center;
   }
-  .logos {
-    height: 40vh;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .react,
-  .express,
-  .node,
-  .mongodb {
-    height: 6rem;
-    width: 24vw;
-  }
 }
 
 @media (min-width: 651px) and (max-width: 1200px) {
-  .react,
-  .express,
-  .node,
-  .mongodb {
-    height: 7.8rem;
-    width: 19vw;
-  }
   .intro-text {
     padding: 2% 0;
-  }
-}
-
-@media (min-width: 1200px) and (max-width: 1500px) {
-  .react,
-  .express,
-  .node,
-  .mongodb {
-    height: 6rem;
-    width: 15vw;
   }
 }
 
