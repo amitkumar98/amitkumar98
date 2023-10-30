@@ -19,64 +19,38 @@
 
 .projects {
   width: 96%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 1.5rem;
   margin: 2% 0;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   row-gap: 1.5rem;
   background: var(--secondary-color);
   border-radius: 0.7rem;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: flex-start;
+  justify-content: space-between;
 }
 
 .section-body {
   padding: 0 1.5rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-column-gap: 2rem;
-          column-gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  -moz-column-gap: 2rem;
+  column-gap: 2rem;
 }
 
 .project-card {
   width: 40%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
   padding: 0.5rem 2.5rem 3rem 2.5rem;
   margin: 0.5rem 0;
   background: var(--bg-color);
   border-radius: 0.7rem;
-  -webkit-box-shadow: 0 0.5rem 1rem var(--shadow-color);
-          box-shadow: 0 0.5rem 1rem var(--shadow-color);
+  box-shadow: 0 0.5rem 1rem var(--shadow-color);
 }
 
 .project-logo-1 {
@@ -100,10 +74,7 @@
 
 @media (max-width: 620px) {
   .section-body {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     row-gap: 1rem;
   }
   .project-card {
@@ -112,5 +83,4 @@
   .project-logo {
     height: 150px;
   }
-}
-/*# sourceMappingURL=projectStyles.css.map */
+} /*# sourceMappingURL=projectStyles.css.map */
